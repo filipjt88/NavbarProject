@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #098
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #123;
+    color: #fff;
+    padding-left: 100px;
+    box-shadow: 0 0 8px #000;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 4px #ddd;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition-duration: 2s;
+}
+
+
+.social-network i {
+    margin: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.social-network i:hover {
+    transition: .5s ease;
+    transform: rotate(360deg);
+}
+
+.bars i {
+    display: none;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 2.5;
+    text-transform: uppercase;
+}
+
+.nav-toggle ul li a:hover {
+    color: red;
+    font-weight: 500;
+    transition: 1s;
+}
+
+.nav-toggle ul {
+    list-style: none;
+}
+
+@media (max-width:779px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header h1 a {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .social-network {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .bars i {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+}
+
+@media(min-width:780px) and (max-width:3000px) {
+    .nav-toggle {
+        display: none !important;
+    }
+}
